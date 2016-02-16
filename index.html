@@ -73,13 +73,19 @@
 				</section>
 
 				<section>
-					<h2>The Plan</h2>
-					<ul>
-						<li>Get git installed on your laptops</li>
-						<li>Register with github.com</li>
-						<li>Get a local copy of the remote project.</li>
-						<li>Go through the workflow of making a change and getting that change merged into the original project.</li>
-					</ul>
+					<section>
+						<h2>The Plan</h2>
+						<ul>
+							<li>Get git installed on your laptops</li>
+							<li>Register with github.com</li>
+							<li>Get a local copy of the remote project.</li>
+							<li>Go through the workflow of making a change and getting that change merged into the original project.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Extras</h2>
+						<p>A bunch of people here know about git and github and are here to help.</p>
+					</section>
 				</section>
 
 
@@ -120,6 +126,95 @@
 						<p>Add some images here on the fly...</p>
 					</section>
 				</section>
+
+				<section>
+					<section>
+						<h2>Something to work on</h2>
+						<p>I wanted us to have something more than just a "hello world" project to work on. So I decided to use <a href="http://lingo.reviews">Lingo</a>.</p>
+						<p>So we can play without annoying Jesse too much, I forked a copy for Code Craft.</p>
+						<p><a href="https://github.com/codecraft-dunedin/lingo">github.com/codecraft-dunedin/lingo</a></p>
+					</section>
+					<section>
+					    <img src="github-lingo.png">
+					</section>
+					<section>
+						<h2>Grabbing your code</h2>
+						<ul>
+							<li>Get some directory where you are going to keep your source files</li>
+							<li>git clone git@github.com:<em>&lt;you&gt;</em>/lingo</li>
+							<li>This makes your copy the <strong>origin</strong></li>
+							<li>Only one branch: <strong>master</strong></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Making a branch for your changes</h2>
+						<ul>
+							<li>Generally you don't want to make changes on your copy of master. You want that to reflect the agreed on <em>true master</em>.</li>
+							<li>git checkout -b hacking</li>
+							<li>This makes a branch off the current one (master), and changes to it.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Make some changes.</h2>
+						<ul>
+							<li>Edit some files.</li>
+							<li>Commit the changes.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Proposing your changes</h2>
+						<ul>
+							<li>Pushing changes to github</li>
+							<li>Creating a pull request</li>				
+							<li>Having the code review / conversation</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Pushing changes</h2>
+						<ul>
+							<li>git push origin HEAD</li>
+							<li>This means, push the head of the current branch
+							to the origin remote into a branch of the same name.</li>
+							<li>Yes there are other ways, but lets start here</li>
+						</ul>
+					</section>
+					<section>
+						<h2>New pull request</h2>
+						<ul>
+							<li>Check the base branch</li>
+							<li>If this is just playing around, choose <em>codecraft-dunedin/lingo</em></li>
+							<li>If this is a real change for Jesse's project, choose <em>lingo-reviews/lingo</em></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Grabbing the updated copy</h2>
+						<ul>
+							<li>Add a remote for the 'master'</li>
+							<li>git remote add upstream git@github.com/codecraft-dunedin/lingo.git</li>				
+						</ul>
+					</section>
+					<section>
+						<h2>pulling master</h2>
+						<ul>
+							<li>git checkout master</li>
+							<li>git pull upstream master</li>
+							<li>git branch -d hacking</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>That's it</h2>
+					<p>What shall we do next time?</p>
+				</section>
+
+
 <!--
 				<section data-markdown>
 					<script type="text/template">
